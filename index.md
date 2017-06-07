@@ -6,7 +6,7 @@ tagline:
 {% include JB/setup %}
 
 #I'm Will Heid and this is my job.
-<img src="assets/img/pulling_fibre.png">
+<img src="assets/img/running_fibre.jpg">
 <p> Welcome. This site will contain my guides for Home Assistant and anyother musings or guides as circumstances need.
 
 
