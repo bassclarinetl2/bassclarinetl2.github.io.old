@@ -25,7 +25,7 @@ author :
 production_url : willheid.com
 
 gems: ["jekyll-sitemap"]
-theme: jekyll-theme-cayman
+#theme: jekyll-theme-cayman
 
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
