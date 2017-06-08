@@ -14,5 +14,5 @@ The Archive contains all the guides etc.</p>
 </div>
 
 <div>
-<p><small>Yes, this is a reference to <a href="http://mikerowe.com">Mike Rowe's</a> tag line from <a href="https://en.wikipedia.org/wiki/Dirty_Jobs">Dirty Jobs</a>.<small></p>
+<p><Yes, this is a reference to <a href="http://mikerowe.com">Mike Rowe's</a> tag line from <a href="https://en.wikipedia.org/wiki/Dirty_Jobs">Dirty Jobs</a>.</p>
 </div>
