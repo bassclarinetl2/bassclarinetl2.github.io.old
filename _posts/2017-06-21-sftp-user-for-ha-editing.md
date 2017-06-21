@@ -6,7 +6,7 @@ date: 2017-06-21
 
 ---
 
-So you've heard about editing your config via SFTP or your sick and tired of editinig via nano or vi, here's how to create a sftp user to allow editing via [Sublime Text](https://www.sublimetext.com/) for example.  (Although Sublime requires a paid addon to deal with sftp)
+So you've heard about editing your config via SFTP or your sick and tired of editing via nano or vi, here's how to create a sftp user to allow editing via [Sublime Text](https://www.sublimetext.com/) for example.  (Although Sublime requires a paid addon to deal with sftp)
 
 NOTE:
 This guide assumes that you are able to ssh into the enviroment and have sudo access.  It also doesn't take into account any 'tweaks' that a docker enviroment might require.
