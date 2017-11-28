@@ -9,7 +9,7 @@ date: 2017-11-27
 Since I tend to install my hass enviroment using the Venv method I figured I'd leave myself notes on how to do so and share them.  Steps are derived from [Here](https://home-assistant.io/docs/installation/virtualenv/) and I have omitted the $ from the code blocks listed below, commands requiring root will have sudo.
 
 
-## {% linkable_title Step 1: Install dependencies %}
+## Step 1: Install dependencies
 
 ```bash
 sudo apt-get update
@@ -18,7 +18,7 @@ sudo apt-get install python3-pip python3-dev
 sudo pip3 install --upgrade virtualenv
 ```
 
-## {% linkable_title Separate user & group for Home Assistant %}
+## Separate user & group for Home Assistant
 
 Standard linux practice is to give services their own user/group to limit permissions.
 
@@ -27,13 +27,13 @@ sudo adduser --system homeassistant
 sudo addgroup homeassistant
 ```
 
-## {Add Zwave Permissions}
+## Add Zwave Permissions
 
 ```bash
 sudo usermod -G dialout -a homeassistant
 ```
 
-## {% linkable_title Create installation directory for Home Assistant %}
+## Create installation directory for Home Assistant
 
 ```bash
 sudo mkdir /srv/homeassistant
@@ -43,8 +43,7 @@ sudo su -s /bin/bash homeassistant
 python3 -m venv /srv/homeassistant
 ```
 
-## {% linkable_title Install or update Home Assistant %}
-
+## Install or update Home Assistant
 
 ```bash
 source /srv/homeassistant/bin/activate
@@ -60,8 +59,7 @@ Exit venv
 exit
 ```
 
-
-## {Configure Autostart}
+## Configure Autostart
 ```bash
 sudo nano /etc/systemd/system/home-assistant.service
 ```
