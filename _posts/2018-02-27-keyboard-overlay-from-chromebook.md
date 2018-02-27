@@ -1,8 +1,10 @@
------
+---
+
 layout: post
 title: Keyboard Overlay for Chromebook
 date: 2018-02-27
------
+
+---
 The following script (from https://github.com/dnschneid/crouton/blob/master/targets/keyboard) will add the chromebook keyboard overlay.
 
 ```
