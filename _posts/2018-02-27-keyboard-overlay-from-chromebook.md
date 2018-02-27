@@ -5,7 +5,7 @@ title: Keyboard Overlay for Chromebook
 date: 2018-02-27
 
 ---
-The following script (from https://github.com/dnschneid/crouton/blob/master/targets/keyboard) will add the chromebook keyboard overlay.
+The following script (from https://github.com/dnschneid/crouton/blob/master/targets/keyboard) and modified based on (https://github.com/GalliumOS/xkeyboard-config/blob/master/debian/patches/chromebook.patch) will add the chromebook keyboard overlay.
 
 ```
 #!/bin/sh -e
@@ -61,7 +61,6 @@ cat > "$XKBROOTTMP/symbols/chromebook" <<END
 partial
 xkb_symbols "overlay" {
     key <LWIN> { [ Overlay1_Enable ], overlay1=<LWIN> };
-
     key <AB09> { overlay1=<INS> };
 
     key <LEFT> { overlay1=<HOME> };
@@ -69,20 +68,16 @@ xkb_symbols "overlay" {
     key <UP>   { overlay1=<PGUP> };
     key <DOWN> { overlay1=<PGDN> };
 
-    key <FK01> { overlay1=<I247> };
-    key <I247> { [ XF86Back ] };
-    key <FK02> { overlay1=<I248> };
-    key <I248> { [ XF86Forward ] };
-    key <FK03> { overlay1=<I249> };
-    key <I249> { [ XF86Reload ] };
-    key <FK04> { overlay1=<I235> }; // XF86Display
-    key <FK05> { overlay1=<I250> };
-    key <I250> { [ XF86ApplicationRight ] };
-    key <FK06> { overlay1=<I232> }; // XF86MonBrightnessDown
-    key <FK07> { overlay1=<I233> }; // XF86MonBrightnessUp
-    key <FK08> { overlay1=<MUTE> };
-    key <FK09> { overlay1=<VOL-> };
-    key <FK10> { overlay1=<VOL+> };
+    key <I166> { overlay1=<FK01> };
+    key <I167> { overlay1=<FK02> };
+    key <I181> { overlay1=<FK03> };
+    key <I160> { overlay1=<FK04> }; 
+    key <I235> { overlay1=<FK05> };
+    key <I232> { overlay1=<FK06> }; // XF86MonBrightnessDown
+    key <I233> { overlay1=<FK07> }; // XF86MonBrightnessUp
+    key <MUTE> { overlay1=<FK08> };
+    key <VOL-> { overlay1=<FK09> };
+    key <VOL+> { overlay1=<FK10> };
 
     key <AE01> { overlay1=<FK01> };
     key <AE02> { overlay1=<FK02> };
